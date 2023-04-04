@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "559651322486",
+    "project_id": "compise-30690",
+    "storage_bucket": "compise-30690.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559651322486:android:7781ab280b8337c8863d57",
+        "android_client_info": {
+          "package_name": "br.com.compise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "559651322486-92hrl3nbli0drntg7trtokg0mur9aha5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACj5ROsJ4KFn8oBz4lIzZkohlO4HX7ru0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "559651322486-92hrl3nbli0drntg7trtokg0mur9aha5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

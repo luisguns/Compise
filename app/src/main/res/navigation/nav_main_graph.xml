@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main_graph"
+    app:startDestination="@id/placeNameFragment">
+
+    <fragment
+        android:id="@+id/placeNameFragment"
+        android:name="br.com.compise.ui.place.PlaceNameFragment"
+        android:label="fragment_place_name"
+        tools:layout="@layout/fragment_place_name" >
+        <action
+            android:id="@+id/action_placeNameFragment_self"
+            app:destination="@id/placeNameFragment"
+            app:exitAnim="@anim/from_right"
+            app:enterAnim="@anim/to_left"
+            app:popExitAnim="@anim/from_left"
+            app:popEnterAnim="@anim/to_right"/>
+        <action
+            android:id="@+id/action_placeNameFragment_to_mobile_navigation"
+            app:destination="@id/mobile_navigation"
+            app:exitAnim="@anim/from_right"
+            app:enterAnim="@anim/to_left"
+            app:popExitAnim="@anim/from_left"
+            app:popEnterAnim="@anim/to_right"/>
+        <action
+            android:id="@+id/action_placeNameFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <include app:graph="@navigation/mobile_navigation" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="br.com.compise.ui.MainActivity"
+        android:label="MainActivity" />
+</navigation>
